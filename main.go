@@ -46,7 +46,7 @@ func main() {
 func GenGitTag(tagList []string, branchName string) string {
 	tagSearchBaseFmt := `%Y%m%d-(\d+)`
 	tagOutputBaseFmt := `%Y%m%d-%%02d.%%s`
-	branchSearchFmt := `/(\d\d\d+)|(\d\d\d+)$`
+	branchSearchFmt := `/(\d+)|(\d+)$`
 	var ticketNumberSrc string
 	if len(branchName) > 0 {
 		ticketNumberSrc = branchName
